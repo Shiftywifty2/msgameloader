@@ -32,10 +32,12 @@ function Menu {
     write-host "---Available Games---" -ForegroundColor Blue
     write-host "[1] Geometry Dash"
     write-host "[2] A Dance of fire and ice"
+    write-host "[3] Need For Speed: Most wanted Black Edition"
     write-host "---Upcoming Games---" -ForegroundColor Blue
-    write-host "[?] Need For Speed: Most wanted Black Edition"
+    write-host "[?] Apex Race"
     write-host "[?] PEAK"
     write-host "[?] Getting Over It"
+    write-host "[?] Ultrakill"
     write-host "---------------------" -ForegroundColor Blue
     write-host "More games are coming soon!" -ForegroundColor Magenta
     write-host "Check the version number to see if new games are released." -ForegroundColor Magenta
@@ -49,6 +51,10 @@ function Menu {
         '2' {
             write-host "Loading script!"
             irm "https://tinyurl.com/1u293adofai" | iex
+        }
+        '3' {
+            write-host "Loading script!"
+            irm "https://tinyurl.com/nfsmw1j12" | iex
         }
         Default {
             write-host "This option doesn't exist." -Foregroundcolor Red
