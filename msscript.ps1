@@ -10,7 +10,7 @@ set-location $env:TEMP
 #Links (DO NOT MODIFY!)
 
 write-host "MS Multi Gameloader" -ForegroundColor White -BackgroundColor Black
-write-host "VERSION ID: A_1.0.1 [CODENAME: JUNIOR_FIX]" -ForegroundColor White -BackgroundColor Black
+write-host "VERSION ID: A_1.0.2 [CODENAME: JUNIOR_WANTED]" -ForegroundColor White -BackgroundColor Black
 write-host "Cracks are available from:" -ForegroundColor Magenta
 write-host "SteamRIP.com" -ForegroundColor Magenta
 write-host "Gamebounty.World (use UblockOrigin and add ||snowvan.xyz)" -ForegroundColor Magenta
@@ -81,3 +81,4 @@ function CheckElevation {
 }
 
 CheckElevation
+
