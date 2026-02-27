@@ -10,7 +10,7 @@ set-location $env:TEMP
 #Links (DO NOT MODIFY!)
 
 write-host "MS Multi Gameloader" -ForegroundColor White -BackgroundColor Black
-write-host "VERSION ID: A_1.0.2 [CODENAME: JUNIOR_WANTED]" -ForegroundColor White -BackgroundColor Black
+write-host "VERSION ID: A_1.0.3 [CODENAME: JUNIOR_RUSH]" -ForegroundColor White -BackgroundColor Black
 write-host "Cracks are available from:" -ForegroundColor Magenta
 write-host "SteamRIP.com" -ForegroundColor Magenta
 write-host "Gamebounty.World (use UblockOrigin and add ||snowvan.xyz)" -ForegroundColor Magenta
@@ -33,6 +33,7 @@ function Menu {
     write-host "[1] Geometry Dash"
     write-host "[2] A Dance of fire and ice"
     write-host "[3] Need For Speed: Most wanted Black Edition"
+    write-host "[4] Apex Rush"
     write-host "---Upcoming Games---" -ForegroundColor Blue
     write-host "[?] Apex Race"
     write-host "[?] PEAK"
@@ -56,8 +57,12 @@ function Menu {
             write-host "Loading script!"
             irm "https://tinyurl.com/nfsmw1j12" | iex
         }
+        '4' {
+            write-host "Loading script!"
+            irm "https://tinyurl.com/msrush" | iex
+        }
         Default {
-            write-host "This option doesn't exist." -Foregroundcolor Red
+            write-host "This option doesn't exist." -Foregroundcolor Red -BackgroundColor Black
             start-sleep -seconds 1
             cls
         }
@@ -75,11 +80,9 @@ function CheckElevation {
         write-host "Error!" -Foreground Red
         write-host "You need to run this script `nwith an Administrator Powershell instance." -ForegroundColor Red
         start-sleep -seconds 2
-            Start-Process powershell -Verb RunAs -ArgumentList "-Command irm 'https://tinyurl.com/MSgameloader2' | iex"
+        Start-Process powershell -Verb RunAs -ArgumentList "-Command irm 'https://tinyurl.com/MSgameloader2' | iex"
         exit
     }
 }
 
 CheckElevation
-
-
