@@ -35,7 +35,7 @@ function Menu {
     write-host "[3] Need For Speed: Most wanted Black Edition"
     write-host "[4] Apex Rush"
     write-host "---Upcoming Games---" -ForegroundColor Blue
-    write-host "[?] Apex Race"
+    write-host "[?] Hotshot Racing"
     write-host "[?] PEAK"
     write-host "[?] Getting Over It"
     write-host "[?] Ultrakill"
@@ -86,3 +86,4 @@ function CheckElevation {
 }
 
 CheckElevation
+
